@@ -8,3 +8,4 @@ joblib
 yfinance
 matplotlib
 seaborn
+pillow==10.4.0
