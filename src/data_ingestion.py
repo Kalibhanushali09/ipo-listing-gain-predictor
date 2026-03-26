@@ -2,6 +2,9 @@ import os
 import pandas as pd
 from dataclasses import dataclass
 
+df_original = pd.read_excel("Initial Public Offering.xlsx")
+df_original.to_csv("artifacts/raw_data.csv", index=False)
+
 @dataclass
 class DataIngestionConfig:
     raw_data_path: str = os.path.join('artifacts', 'raw_data.csv')
